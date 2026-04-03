@@ -1,10 +1,13 @@
-import React from 'react'
-import { Text, View } from 'react-native'
+import {Text} from 'react-native'
+import {SafeAreaView as RNSafeAreaView} from "react-native-safe-area-context";
+import { styled } from "nativewind";
+const SafeAreaView = styled(RNSafeAreaView);
 
-export default function Insights() {
+const Insights = () => {
     return (
-        <View>
-            <Text>insights</Text>
-        </View>
+        <SafeAreaView className="flex-1 bg-background p-5">
+            <Text>Insights</Text>
+        </SafeAreaView>
     )
 }
+export default Insights
